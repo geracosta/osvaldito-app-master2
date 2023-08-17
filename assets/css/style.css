@@ -17,7 +17,7 @@
     line-height: 1.42857;
 }
 
-.form-temas div{
+.form-temas div {
     padding: 0px 20px 0px 20px;
 }
 
@@ -43,49 +43,96 @@
 @media (max-width: 575px) {
 
     .embed-container {
-      width: 500px;
-      padding-bottom: 50%;
-    } 
+        width: 500px;
+        padding-bottom: 50%;
+    }
 }
+
 .embed-container iframe {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
 }
 
-        /* Estilos adicionales */
-        .card-title {
-            color: black; /* Color del título */
+/* Estilos adicionales */
+.card-title {
+    color: black;
+    /* Color del título */
+}
+
+.btn-custom {
+    background-color: black;
+    /* Color de fondo del botón */
+    color: white;
+    /* Color del texto del botón */
+    border: none;
+    /* Quitamos el borde */
+}
+
+.card {
+    height: 100%;
+    /* Altura fija para todas las tarjetas */
+    position: relative;
+    /* Posición relativa para contener el botón */
+}
+
+.card-content {
+    padding: 10px;
+    /* Espacio interno para el contenido */
+    height: calc(100% - 40px);
+    /* Altura del contenido ajustada */
+    overflow: auto;
+    /* Scroll si el contenido es muy largo */
+}
+
+.card {
+    text-align: center;
+    border: none
+}
+
+.embed-responsive-16by9 {
+    margin: 10px;
+    /* Espacio entre las miniaturas */
+}
+
+.card-title {
+    margin-top: 10px;
+    /* Espacio entre el título y la miniatura */
+}
+
+        /* Estilo para hacer que la imagen ocupe todo el ancho */
+        .carousel-item {
+            align-items: center;
+            justify-content: center;
+            position: relative;
         }
 
-        .btn-custom {
-            background-color: black; /* Color de fondo del botón */
-            color: white; /* Color del texto del botón */
-            border: none; /* Quitamos el borde */
+        .carousel-item img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
         }
 
-        .card {
-            height: 100%; /* Altura fija para todas las tarjetas */
-            position: relative; /* Posición relativa para contener el botón */
-        }
+    /* Estilo para colocar el texto en la parte inferior */
+    .carousel-caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        color: white;
+        text-align: center;
+    }
+    
+    /* Estilo para el texto dentro del carrusel caption */
+    .carousel-caption h3, .carousel-caption p {
+        margin: 0; /* Elimina el margen predeterminado del título y el párrafo */
+    }
 
-        .card-content {
-            padding: 10px; /* Espacio interno para el contenido */
-            height: calc(100% - 40px); /* Altura del contenido ajustada */
-            overflow: auto; /* Scroll si el contenido es muy largo */
-        }
-
-        .card {
-            text-align: center;
-            border: none
-        }
-
-        .embed-responsive-16by9 {
-            margin: 10px; /* Espacio entre las miniaturas */
-        }
-
-        .card-title {
-            margin-top: 10px; /* Espacio entre el título y la miniatura */
-        }
+    /* Aumentar la altura del carrusel caption */
+    .carousel-caption {
+        padding: 40px; /* Aumenta el padding superior e inferior */
+    }
