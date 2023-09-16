@@ -4,87 +4,75 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Osvaldo Acosta</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <link rel="stylesheet" href="./assets/css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">        <link rel="stylesheet" href="./assets/css/style.css">
         <script src="https://kit.fontawesome.com/bdd486eeaa.js" crossorigin="anonymous"></script>
     </head>
     <body class="container-fluid p-0">
         <div>
             <header>
-                <nav id="navbar" class="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid">
-                        <div href="index.html" class=" d-flex w-50 me-auto"></div>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ul-container">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div id="ul-container" class="navbar-collapse collapse w-100">
-                            <ul class="navbar-nav w-100 justify-content-center">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="index.html">Home</a>
-                                </li>
-                            </ul>
-                            <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
-                                <li class="nav-item">
-
-                                </li>
-                            </ul>    
+                        <a class="navbar-brand" href="#">
+                            <img src="./assets/img/icono.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                            Tutoriales para trompeta
+                        </a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                          <a class="nav-link active" aria-current="page" href="#">Home</a>
+                          <a class="nav-link" href="#idContactame">Contacto</a>
                         </div>
+                      </div>
                     </div>
-                </nav>
+                  </nav>
             </header>
             <main>
-                <section class="container-fluid p-0">
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#myCarousel" data-slide-to="1"></li>
-                            <li data-target="#myCarousel" data-slide-to="2"></li>
-                        </ol>
+                <section class="container-fluid p-0 d-none d-sm-none d-md-block">
+                    <div id="idCarousel" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="./assets/img/trumpet1.jpg" alt="Imagen 1">
-                                <div class="carousel-caption">
-                                    <h3>Hola colega!</h3>
-                                    <p>En este canal te ayudamos a que puedas mejorar en la trompeta.
-                                        Seguramente te diste cuenta que es difícil este instrumento, que hay cosas que no te salen o que estas estancado con el cansancio de la boca, dudas en la embocadura, la respiración y el sonido. Te ofrezco mi conocimiento y experiencia para que este hermoso camino de la trompeta sea armonizo y lo disfrutes al máximo.</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./assets/img/trumpet2.jpg" alt="Imagen 2">
-                                <div class="carousel-caption">
-                                    <h3>Hola colega!</h3>
-                                    <p>En este canal te ayudamos a que puedas mejorar en la trompeta.
-                                        Seguramente te diste cuenta que es difícil este instrumento, que hay cosas que no te salen o que estas estancado con el cansancio de la boca, dudas en la embocadura, la respiración y el sonido. Te ofrezco mi conocimiento y experiencia para que este hermoso camino de la trompeta sea armonizo y lo disfrutes al máximo.</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./assets/img/trumpet3.png" alt="Imagen 3">
-                                <div class="carousel-caption">
-                                    <h3>Hola colega!</h3>
-                                    <p>En este canal te ayudamos a que puedas mejorar en la trompeta.
-                                        Seguramente te diste cuenta que es difícil este instrumento, que hay cosas que no te salen o que estas estancado con el cansancio de la boca, dudas en la embocadura, la respiración y el sonido. Te ofrezco mi conocimiento y experiencia para que este hermoso camino de la trompeta sea armonizo y lo disfrutes al máximo.</p>
-                                </div>
-                            </div>
+                          <div class="carousel-item active">
+                            <img src="./assets/img/trumpet1.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./assets/img/trumpet2.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./assets/img/trumpet3.png" class="d-block w-100" alt="...">
+                          </div>
+                            <p class="carousel-caption">En este canal te ayudamos a que puedas mejorar en la trompeta.
+                                Seguramente te diste cuenta que es difícil este instrumento, que hay cosas que no te salen o que estas estancado con el cansancio de la boca, dudas en la embocadura, la respiración y el sonido. Te ofrezco mi conocimiento y experiencia para que este hermoso camino de la trompeta sea armonizo y lo disfrutes al máximo.</p>
                         </div>
-                        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#idCarousel" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#idCarousel" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Siguiente</span>
+                        </button>
                     </div>
                 </section>
+                <div class="container-fluid p-0 d-block d-sm-block d-md-none" style="position: relative;">
+                    <img src="./assets/img/trumpet2.jpg" class="background img-fluid">
+                    <p class="texto-principal">En este canal te ayudamos a que puedas mejorar en la trompeta.
+                        Seguramente te diste cuenta que es difícil este instrumento, que hay cosas que no te salen o que estas estancado con el cansancio de la boca, dudas en la embocadura, la respiración y el sonido. Te ofrezco mi conocimiento y experiencia para que este hermoso camino de la trompeta sea armonizo y lo disfrutes al máximo.
+                    </p>
+                </div>
                 <br>
                 <br>
                 <br>
-                <div class="container">
+                <div class="container-md">
                     <div class="row">
-                        <div class="col-md-6">
-                            <img src="./assets/inicio.png" class="img-fluid" style="width: 100%" alt="">
+                        <div class="col-md-6 p-0">
+                            <img src="./assets/inicio.png" alt="">
                         </div>
+                        <div class="container-fluid p-0 d-block d-sm-block d-md-none" style="position: relative;">
+                            <br>
+                            <br>
+                        </div>
+
                         <div class="col-md-6">
                             <h2>SOBRE EL CANAL</h2>
                             <hr>
@@ -99,12 +87,12 @@
                 <br>
                 <br>
                 <div class="container-fluid" style="background-color: black;color:white">
-                    <section class="container py-5">
+                    <section class="container py-5 card-background">
                         <h2 class="text-center mb-4">Servicios</h2>
                         <div class="row">
-                            <div class="col-md-6 mb-4">
+                            <div class="col-md-6 mb-4 ">
                                 <div class="card">
-                                    <div class="card-body text-center">
+                                    <div class="card-body text-center background-part">
                                         <h3 class="card-title">Clases online</h3>
                                         <button class="btn btn-custom">Ver más</button>
                                     </div>
@@ -112,7 +100,7 @@
                             </div>
                             <div class="col-md-6 mb-4">
                                 <div class="card">
-                                    <div class="card-body text-center">
+                                    <div class="card-body text-center background-part">
                                         <h3 class="card-title">Revista para aprender</h3>
                                         <button class="btn btn-custom">Ver más</button>
                                     </div>
@@ -120,7 +108,7 @@
                             </div>
                             <div class="col-md-6 mb-4">
                                 <div class="card">
-                                    <div class="card-body text-center">
+                                    <div class="card-body text-center background-part">
                                         <h3 class="card-title">Necesitas sacar un tema/Partitura</h3>
                                         <button class="btn btn-custom">Ver más</button>
                                     </div>
@@ -128,7 +116,7 @@
                             </div>
                             <div class="col-md-6 mb-4">
                                 <div class="card">
-                                    <div class="card-body text-center">
+                                    <div class="card-body text-center background-part">
                                         <h3 class="card-title">Sección de vientos para tus temas</h3>
                                         <button class="btn btn-custom">Ver más</button>
                                     </div>
@@ -180,7 +168,7 @@
                     <div class="col-md-6 d-flex align-items-center">
                         <img src="./assets/mail.png" class="img-fluid p-4 mb-4" style="width: 100%; background-color: white;" alt="">
                     </div> 
-                    <div class="col-md-6 align-items-center">
+                    <div id="idContactame" class="col-md-6 align-items-center">
                         <div class="d-flex flex-column h-100 justify-content-center align-items-center">
                             <h2 class="text-center" style="color:white">CONTACTAME</h2>
                             <div class="container-fluid card align-content-center" style="width: 100%;">
@@ -198,20 +186,21 @@
                                     <button class="btn btn-outline-success" type="submit">Enviar</button>
                                 </div>
                             </div>
-                        <div class="container text-center p-2">
-                            <a href="https://www.instagram.com/osvalditolag/" target="_blank" class="btn btn-dark btn-circle m-3" role="button">
-                                <i class="fa fa-instagram align-middle"></i>
-                            </a>
-                            <a href="https://www.youtube.com/channel/UC5MMp2gKHgUbdEGCCjQAg7A/featured" target="_blank" class="btn btn-dark btn-circle m-3" role="button">
-                                <i class="fa fa-youtube align-middle"></i>
-                            </a>
+                            <div class="container text-center p-2">
+                                <a href="https://www.instagram.com/osvalditolag/" target="_blank" class="btn btn-dark btn-circle m-3" role="button">
+                                    <i class="fa fa-instagram align-middle"></i>
+                                </a>
+                                <a href="https://www.youtube.com/channel/UC5MMp2gKHgUbdEGCCjQAg7A/featured" target="_blank" class="btn btn-dark btn-circle m-3" role="button">
+                                    <i class="fa fa-youtube align-middle"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </main>
         </div>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

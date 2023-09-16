@@ -136,3 +136,48 @@
     .carousel-caption {
         padding: 40px; /* Aumenta el padding superior e inferior */
     }
+
+    .texto-principal {
+        position: absolute;
+        text-align: justify;
+        text-justify: inter-word;
+        left: 0;
+        right: 0;
+        top: 50%; /* Ajusta esta posición verticalmente */
+        transform: translateY(-50%); /* Centra verticalmente */
+        color: white;
+        padding: 20px; /* Espacio alrededor del texto */
+    }
+
+    .background {
+        width: 1000px;
+        height: 300px;
+        position: relative;
+    }
+
+    .background-part {
+        position: relative;
+    }
+
+    .background-part::before { 
+        content: "";
+        background-image: url("../img/trompeta-partitura.jpg");
+        background-size: cover;
+        position: absolute;
+        background-position: center;
+        background-repeat: no-repeat;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.2;
+    }
+
+    .background-part .card-title {
+        position: relative;
+    }
+
+    .background-part .btn {
+        position: relative;
+    }
+
