@@ -40,6 +40,10 @@
     overflow: hidden;
 }
 
+.nav-link {
+    align-self: center;
+}
+
 @media (max-width: 575px) {
 
     .embed-container {
@@ -102,82 +106,169 @@
     /* Espacio entre el título y la miniatura */
 }
 
-        /* Estilo para hacer que la imagen ocupe todo el ancho */
-        .carousel-item {
-            align-items: center;
-            justify-content: center;
-            position: relative;
-        }
+/* Estilo para hacer que la imagen ocupe todo el ancho */
+.carousel-item {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
 
-        .carousel-item img {
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
-        }
+.carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
 
-    /* Estilo para colocar el texto en la parte inferior */
-    .carousel-caption {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: rgba(0, 0, 0, 0.5);
-        padding: 20px;
-        color: white;
-        text-align: center;
+/* Estilo para colocar el texto en la parte inferior */
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    color: white;
+    text-align: center;
+}
+
+.carousel-titulo {
+    position: absolute;
+    bottom: 60%;
+    left: 0;
+    right: 0;
+    top: 0;
+    color: white;
+    z-index: 10;
+    font-size: 70px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    text-align: center;
+    height: fit-content;
+    padding-top: 5%;
+}
+
+.carousel-subtitulo {
+    position: absolute;
+    bottom: 45%;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding-top: 12%;
+    color: white;
+    z-index: 10;
+    font-size: 20px;
+    text-align: right;
+    font-weight: bold;
+}
+
+@media (max-width: 1047px) {
+    .carousel-subtitulo {
+        padding-top: 25%;
+        margin-right: 20%;
     }
-    
-    /* Estilo para el texto dentro del carrusel caption */
-    .carousel-caption h3, .carousel-caption p {
-        margin: 0; /* Elimina el margen predeterminado del título y el párrafo */
-    }
+  }
 
-    /* Aumentar la altura del carrusel caption */
-    .carousel-caption {
-        padding: 40px; /* Aumenta el padding superior e inferior */
+  @media (min-width: 1048px) {
+    .carousel-subtitulo {
+        padding-top: 12%;
+        margin-right: 10%;
     }
+  }
 
-    .texto-principal {
-        position: absolute;
-        text-align: justify;
-        text-justify: inter-word;
-        left: 0;
-        right: 0;
-        top: 50%; /* Ajusta esta posición verticalmente */
-        transform: translateY(-50%); /* Centra verticalmente */
-        color: white;
-        padding: 20px; /* Espacio alrededor del texto */
-    }
 
-    .background {
-        width: 1000px;
-        height: 300px;
-        position: relative;
-    }
+/* Estilo para el texto dentro del carrusel caption */
+.carousel-caption h3,
+.carousel-caption p {
+    margin: 0;
+    /* Elimina el margen predeterminado del título y el párrafo */
+}
 
-    .background-part {
-        position: relative;
-    }
+.texto-principal {
+    position: absolute;
+    text-align: justify;
+    text-justify: inter-word;
+    left: 0;
+    right: 0;
+    top: 50%;
+    /* Ajusta esta posición verticalmente */
+    transform: translateY(-50%);
+    /* Centra verticalmente */
+    color: black;
+    padding: 20px;
+    /* Espacio alrededor del texto */
+}
 
-    .background-part::before { 
-        content: "";
-        background-image: url("../img/trompeta-partitura.jpg");
-        background-size: cover;
-        position: absolute;
-        background-position: center;
-        background-repeat: no-repeat;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
-        opacity: 0.2;
-    }
+.titulo{
+    margin: 2%;
+    background-image: url("../img/trumpet2.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    color: white;
+}
 
-    .background-part .card-title {
-        position: relative;
-    }
+.titulo-principal{
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 5%;
+    padding: 2%;
+}
 
-    .background-part .btn {
-        position: relative;
-    }
+.imagen-separadora{
+    background-image: url("../inicio.png"); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 375px;
+}
 
+.subtitulo-principal{
+    font-size: 20px;
+    text-align: right;
+    padding-right: 5%;
+    font-weight: bold;
+}
+
+.en-este-canal{
+    background-color: white; 
+    border: 1px solid #f2d000;
+    height: 300px;
+    width: 375px;
+    position: relative;
+    margin-bottom: 2%;
+}
+
+.background {
+    width: 1000px;
+    height: 300px;
+    position: relative;
+}
+
+.background-part {
+    position: relative;
+}
+
+.background-part::before {
+    content: "";
+    background-image: url("../img/trompeta-partitura.jpg");
+    background-size: cover;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.2;
+}
+
+.background-part .card-title {
+    position: relative;
+}
+
+.background-part .btn {
+    position: relative;
+}
