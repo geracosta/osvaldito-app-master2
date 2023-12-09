@@ -1,3 +1,7 @@
+body {
+    font-family: 'Finlandica';
+}
+
 .btn-circle.btn-xl {
     width: 70px;
     height: 70px;
@@ -52,6 +56,20 @@
     }
 }
 
+.container-sobrevos {
+    height: 70%;
+    align-items: center;
+    align-content: center;
+    min-height: 50vh;
+    /* display: flex;
+    align-items: center; */
+}
+
+.embed-responsive-item-sobrevos {
+    width: 100%;
+    height: 120%;
+}
+
 .embed-container iframe {
     position: absolute;
     top: 0;
@@ -63,7 +81,7 @@
 /* Estilos adicionales */
 .card-title {
     color: black;
-    /* Color del título */
+    font-size: 30px;
 }
 
 .btn-custom {
@@ -73,6 +91,10 @@
     /* Color del texto del botón */
     border: none;
     /* Quitamos el borde */
+    width: 30%;
+    height: 40%;
+    margin-top: 3%;
+    font-size: 20px;
 }
 
 .card {
@@ -101,35 +123,31 @@
     /* Espacio entre las miniaturas */
 }
 
+.embed-responsive {
+    min-height: 40vh;
+    min-width: 60vh;
+    width: 100%;
+}
+
+.embed-responsive-item {
+    min-height: 40vh;
+    min-width: 60vh;
+}
+
 .card-title {
     margin-top: 10px;
     /* Espacio entre el título y la miniatura */
 }
 
-/* Estilo para hacer que la imagen ocupe todo el ancho */
-.carousel-item {
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-.carousel-item img {
-    object-fit: cover;
+.tamano-escritorio {
     width: 100%;
     height: 100%;
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
 }
 
-/* Estilo para colocar el texto en la parte inferior */
-.carousel-caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 40px;
-    color: white;
-    text-align: center;
-}
+/* Estilo para hacer que la imagen ocupe todo el ancho */
 
 .carousel-titulo {
     position: absolute;
@@ -138,13 +156,14 @@
     right: 0;
     top: 0;
     color: white;
-    z-index: 10;
+    z-index: 20;
     font-size: 70px;
     font-weight: bolder;
     letter-spacing: 1px;
     text-align: center;
     height: fit-content;
     padding-top: 5%;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .carousel-subtitulo {
@@ -155,10 +174,11 @@
     top: 0;
     padding-top: 12%;
     color: white;
-    z-index: 10;
+    z-index: 20;
     font-size: 20px;
     text-align: right;
     font-weight: bold;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 @media (max-width: 1047px) {
@@ -175,12 +195,31 @@
     }
   }
 
+.carousel-inner{
+    height: 100%;
+}
 
-/* Estilo para el texto dentro del carrusel caption */
-.carousel-caption h3,
-.carousel-caption p {
-    margin: 0;
-    /* Elimina el margen predeterminado del título y el párrafo */
+.carousel-caption {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding-top: 40%;
+    color: white;
+    font-size: 30px;
+    z-index: 11;
+    text-align: middle;
+}
+
+.carousel-caption-blur {
+    position: inherit;
+    left: 0;
+    right: 0;
+    top: 500px;
+    padding-top: 10%;
+    z-index: 10;
+    background-color: rgba(10, 10, 10, 0.9);
 }
 
 .texto-principal {
@@ -271,4 +310,16 @@
 
 .background-part .btn {
     position: relative;
+}
+
+.card-parent .card-size{
+    min-height: 30vh;
+}
+
+.titulo-servicios {
+    font-size: 300%;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
